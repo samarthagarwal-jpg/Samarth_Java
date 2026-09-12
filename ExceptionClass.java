@@ -5,9 +5,9 @@ class MyException extends Exception
     {
         return super.toString() + "I am toString";
     }
-    public String getString()
+    public String getMessage()
     {
-        return super.getString() + "I am getMessage";
+        return super.getMessage() + "I am getMessage";
     }
 }
 public class ExceptionClass {
