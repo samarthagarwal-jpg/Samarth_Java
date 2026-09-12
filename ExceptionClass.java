@@ -1,13 +1,15 @@
 import java.util.Scanner;
 class MyException extends Exception
 {
+    @Override
     public String toString()
     {
-        return super.toString() + "I am toString";
+        return "I am toString";
     }
+    @Override
     public String getMessage()
     {
-        return super.getMessage() + "I am getMessage";
+        return "I am getMessage";
     }
 }
 public class ExceptionClass {
@@ -15,7 +17,7 @@ public class ExceptionClass {
         int a;
         Scanner sc=new Scanner(System.in);
         a= sc.nextInt();
-        if(a<99)
+        if(a<9)
         {
             try {
                 throw new MyException();
@@ -23,6 +25,8 @@ public class ExceptionClass {
             catch (Exception e)
             {
                 System.out.println(e.getMessage());
+                System.out.println(e.toString());
+                e.printStackTrace();
             }
         }
     }
