@@ -14,10 +14,11 @@ public class ArrayList1 {
         l1.add(3);
         l1.add(6);
         l1.add(0,1);
-        l1.add(0, 4);
+
+        l1.add(3, 4);
 
         //l1.addAll(0,l2);
-        l1.addAll(l2);
+        //l1.addAll(l2);
 
         //l1.clear();
 
